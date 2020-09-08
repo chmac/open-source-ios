@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-templates-category-tsx","path":"/category/undefined/","result":{"errors":[{"message":"Variable \"$slug\" got invalid value undefined; Expected non-nullable type String! not to be null.","locations":[{"line":1,"column":25}]}],"pageContext":{"id":"bonus"}},"staticQueryHashes":["477674405","712016698"]}
