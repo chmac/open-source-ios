@@ -74,6 +74,10 @@ exports.onCreateNode = async ({ node, actions, getCache, createNodeId }) => {
       await createNode(projectNode)
 
       if (project.screenshots && project.screenshots.length > 0) {
+        if (!project['category-ids'].includes('game')) {
+          return
+        }
+
         // In development, we want to limit how many images we download,
         // otherwise it takes forever and uses >800MB of disk space.
         if (limit > 0 && count > limit) {
